@@ -9,8 +9,6 @@ namespace Auth.Api.Controllers;
 [Route("api/auth")]
 public class AuthController : ControllerBase
 {
-
-    [Authorize]
     [HttpPost("sing-in")]
     public async Task SingInAsync(CancellationToken ct)
     {
